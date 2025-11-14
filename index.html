@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Menu Bar</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header{
+            text-align:center;
+        }
+        #logo{
+            width:300px;
+            height:auto;
+        }
+        #menu-bar{
+            text-align:center;
+            background-color:cadetblue;
+        }
+        #menu-bar li{
+            
+            display:inline-block;
+            padding:15px 10px;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+        }
+        #container{
+            text-align:center;
+            padding:50px 100px;
+        }
+        #about-img{
+            width:70%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+    <img src="https://media.designrush.com/agencies/356900/conversions/ONPASSIVE-logo-profile.jpg" id="logo">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Our team</li>
+        <li>Client</li>
+        <li>Contact us</li>
+    </nav>
+        <div id="container">
+        <h1>About us</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3HZhMyFJky0l1bvh9B5xTgBMkpmU4sHV0dA&s" alt="" id="about-img">
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus est officiis quisquam rerum omnis distinctio nostrum doloribus deleniti architecto maxime, perferendis dignissimos ullam sunt, quia delectus aspernatur reiciendis. Voluptates accusantium sed porro animi sequi modi voluptas cumque odit obcaecati consequuntur vitae veniam blanditiis nemo, magnam quidem tempore velit alias ratione nobis in est cum dolorum ducimus. Ex dolore eum, exercitationem in qui officiis dolor, voluptatibus repellat reiciendis aspernatur quasi vitae veritatis ipsa sunt, aliquid tempore nesciunt natus impedit eveniet! Aperiam molestiae iusto necessitatibus quia saepe magnam aspernatur odit expedita tempora doloremque dicta sequi, ipsam eius. Veniam necessitatibus ab modi cumque itaque vitae incidunt maxime ex beatae corrupti? Blanditiis nisi excepturi sit eos voluptatum nesciunt itaque in ut quia nulla, magnam asperiores, consequatur magni unde laborum eum atque? Quam quibusdam labore expedita quis delectus minus maiores beatae perferendis! Quas recusandae voluptatum necessitatibus optio, dignissimos natus nemo sint iure nobis perferendis est, expedita non quibusdam, assumenda eius libero laboriosam nihil exercitationem in voluptas sit eaque quisquam asperiores? Neque, hic? Dolores incidunt reprehenderit, dolore totam, esse ab natus provident, necessitatibus culpa fugiat libero enim. Vitae repudiandae nemo dolor dignissimos fugiat labore? Porro optio totam animi cupiditate provident esse atque nemo amet fugiat iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum modi sequi quo incidunt nulla dolor aut laudantium recusandae dolorum minima accusantium ducimus ex iure labore quidem voluptates facere ullam aliquam, harum culpa ad alias. Quam magni obcaecati, consequatur provident voluptates blanditiis? Magni maxime est provident excepturi sapiente quaerat, vero, quis totam ipsam, ratione optio iste. Voluptates cum, ratione fuga laborum hic ipsum! Nostrum, officia praesentium. Ipsa quia accusantium architecto corporis quod provident laboriosam? Magni et perspiciatis doloribus amet sed, ipsam temporibus quam dolor impedit non fugit voluptas at dicta, velit fugiat soluta consectetur. Nisi ad corrupti debitis quod quo voluptatibus?</p>
+
+</div>
+<script>
+     window.addEventListener('scroll',function(){
+     let navbar = document.getElementById("menu-bar");
+
+        if(window.pageYOffset >= 190){
+            navbar.classList.add('sticky');
+        }
+        else{
+            navbar.classList.remove('sticky');
+        }
+
+     });
+    </script>
+
+</body>
+</html>
